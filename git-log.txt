@@ -1,0 +1,35 @@
+commit 422bd1a6f6fc3e4af0ca6c18e943f472cb0a497e
+Author: Aaron Sun <aaronsun2000@berkeley.edu>
+Date:   Thu Oct 19 11:57:11 2023 -0400
+
+    created answers to questions
+
+commit 6c7d3309fdb29029f62569f616bfccee5a8b8cce
+Author: Aaron Sun <aaronsun2000@berkeley.edu>
+Date:   Thu Oct 19 11:56:50 2023 -0400
+
+    created mutation detection tests
+
+commit 819568a784d168663d4f3e0d67f04189310421f4
+Author: Aaron Sun <aaronsun2000@berkeley.edu>
+Date:   Thu Oct 19 11:56:30 2023 -0400
+
+    created decision coverage tests
+
+commit 90b531be8b8db573d93f0d8d2cfe3f63b016accd
+Author: Aaron Sun <aaronsun2000@berkeley.edu>
+Date:   Thu Oct 19 11:55:57 2023 -0400
+
+    created statement coverage tests
+
+commit c3d851bce1d940da8033c70f09e35a0e8469cf99
+Author: Aaron Sun <aaronsun2000@berkeley.edu>
+Date:   Thu Oct 19 11:51:53 2023 -0400
+
+    created CFG figures
+
+commit b2e42357c86913e81d7ee408830f5ec121a175da
+Author: Aaron Sun <aaronsun2000@berkeley.edu>
+Date:   Thu Oct 19 11:51:09 2023 -0400
+
+    initial commit
