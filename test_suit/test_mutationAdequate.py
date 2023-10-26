@@ -62,6 +62,16 @@ class MutationTest(unittest.TestCase):
         expected = Triangle.Type.INVALID
         self.assertEqual(actual, expected)
 
+    def testNegTriangleAllThree(self):
+        actual = Triangle.classify(-1, -5, -5)
+        expected = Triangle.Type.INVALID
+        self.assertEqual(actual, expected)
+
+    def testNegTriangleOnlyTwo(self):
+        actual = Triangle.classify(-1, 5, -5)
+        expected = Triangle.Type.INVALID
+        self.assertEqual(actual, expected)
+
     def testZeroTriangleA(self):
         actual = Triangle.classify(0, 5, 5)
         expected = Triangle.Type.INVALID
@@ -74,6 +84,16 @@ class MutationTest(unittest.TestCase):
     
     def testZeroTriangleC(self):
         actual = Triangle.classify(5, 5, 0)
+        expected = Triangle.Type.INVALID
+        self.assertEqual(actual, expected)
+
+    def testZeroTriangleAll(self):
+        actual = Triangle.classify(0, 0, 0)
+        expected = Triangle.Type.INVALID
+        self.assertEqual(actual, expected)
+
+    def testZeroTriangleOnlyTwo(self):
+        actual = Triangle.classify(0, 5, 0)
         expected = Triangle.Type.INVALID
         self.assertEqual(actual, expected)
 if __name__ == '__main__':

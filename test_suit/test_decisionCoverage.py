@@ -2,8 +2,13 @@ import unittest
 from isTriangle import Triangle
 
 class StatementCoverageTest(unittest.TestCase):
-    def testEquilateral(self):
+    def testEquilateral_1(self):
         actual = Triangle.classify(10, 10, 10)
+        expected = Triangle.Type.EQUILATERAL
+        self.assertEqual(actual, expected)
+
+    def testEquilateral_2(self):
+        actual = Triangle.classify(15, 15, 15)
         expected = Triangle.Type.EQUILATERAL
         self.assertEqual(actual, expected)
 
@@ -27,6 +32,11 @@ class StatementCoverageTest(unittest.TestCase):
         expected = Triangle.Type.SCALENE
         self.assertEqual(actual, expected)
 
+    def testScalene_2(self):
+        actual = Triangle.classify(15, 32, 34)
+        expected = Triangle.Type.SCALENE
+        self.assertEqual(actual, expected)
+
     def testTriangleInequalityDiff(self):
         actual = Triangle.classify(5, 6, 20)
         expected = Triangle.Type.INVALID
@@ -41,5 +51,16 @@ class StatementCoverageTest(unittest.TestCase):
         actual = Triangle.classify(-5, 5, 20)
         expected = Triangle.Type.INVALID
         self.assertEqual(actual, expected)
+
+    def testNegTriangle_2(self):
+        actual = Triangle.classify(-5, -5, 20)
+        expected = Triangle.Type.INVALID
+        self.assertEqual(actual, expected)
+
+    def testNegTriangle_3(self):
+        actual = Triangle.classify(-5, -5, -20)
+        expected = Triangle.Type.INVALID
+        self.assertEqual(actual, expected)
+
 if __name__ == '__main__':
     unittest.main()
