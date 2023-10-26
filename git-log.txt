@@ -1,3 +1,15 @@
+commit cf21a2d9fa2c18d76ce6344afca84cf527ff2cf7
+Author: Karthik Ravichandran <karthikravi@Karthiks-MacBook-Pro.local>
+Date:   Wed Oct 25 23:14:53 2023 -0400
+
+    Improved Decision coverage test_decisionCoverage.py from 97% to 98%
+
+commit 3b755e8d2a3a91c185acb5d4c1d83437914f1d89
+Author: Aaron Sun <aaronsun2000@berkeley.edu>
+Date:   Wed Oct 25 13:18:04 2023 -0400
+
+    added git log file
+
 commit 422bd1a6f6fc3e4af0ca6c18e943f472cb0a497e
 Author: Aaron Sun <aaronsun2000@berkeley.edu>
 Date:   Thu Oct 19 11:57:11 2023 -0400
